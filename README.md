@@ -2,7 +2,7 @@
 - 🎓Cursando TSI UTFPR
 - 📕 Estudante de Programação
 ## Blog pessoal
-<a href="https://instagram.com"><img alt="blog" src="https://img.shields.io/badge/Blogger-FF5722?style=for-the-badge&logo=blogger&logoColor=white"></a>
+<a href="https://allancordova.github.io/"><img alt="blog" src="https://img.shields.io/badge/Blogger-FF5722?style=for-the-badge&logo=blogger&logoColor=white"></a>
 - ![Fragma GitHub stats](https://github-readme-stats.vercel.app/api?username=allancordova&show_icons=true&theme=radical)
 ## Tecnologias Dominadas:
 <div style="display: inline_block">
