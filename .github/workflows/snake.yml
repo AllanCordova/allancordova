@@ -2,18 +2,19 @@ name: Generate Snake Animation
 
 on:
   schedule: 
-    - cron: "0 0 * * *" # Executa diariamente
+    - cron: "0 0 * * *" # Executa uma vez ao dia
   workflow_dispatch:
 
 jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v3 # Atualizado para a versão mais recente
+      - uses: actions/checkout@v3
       - name: Generate Snake Animation
-        uses: Platane/snk@v2
+        uses: crazy-max/ghaction-github-stats@v2 # Alternativa ao Platane/snk
         with:
-          github_user_name: AllanCordova # Substitua pelo seu nome de usuário no GitHub
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          github_user_name: AllanCordova  # Substitua pelo seu usuário do GitHub
 
       - name: Commit and push
         run: |
@@ -24,4 +25,3 @@ jobs:
           git push
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-
