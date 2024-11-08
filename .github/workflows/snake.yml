@@ -1,27 +1,26 @@
 name: Generate Snake Animation
 
 on:
-  schedule: 
-    - cron: "0 0 * * *" # Executa uma vez ao dia
-  workflow_dispatch:
+  schedule:
+    - cron: "0 0 * * *"  # Executa uma vez por dia
+  workflow_dispatch:  # Permite execução manual
 
 jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v3  # Usa a versão mais recente do checkout
       - name: Generate Snake Animation
-        uses: crazy-max/ghaction-github-stats@v2 # Alternativa ao Platane/snk
+        uses: Platane/snk@v2  # Usa a ação do Platane para gerar a cobrinha
         with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          github_user_name: AllanCordova  # Substitua pelo seu usuário do GitHub
+          github_user_name: AllanCordova  # Substitua pelo seu nome de usuário no GitHub
 
-      - name: Commit and push
+      - name: Commit and push the generated snake.svg
         run: |
           git config --local user.name "github-actions[bot]"
           git config --local user.email "github-actions[bot]@users.noreply.github.com"
-          git add snake.svg
+          git add snake.svg  # Adiciona o arquivo gerado
           git commit -m "Generate Snake Animation"
           git push
         env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}  # Usando o token para enviar o commit
