@@ -44,11 +44,10 @@
 
 ###
 
-<img align="right" height="150" src="https://i.giphy.com/media/v1.Y2lkPTc5MGI3NjExNjl2bG5hbzk4Y3B6aW9oeGs2ZTBidTMxYzNreXVxZ3Q2MWFhZng2cSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/zHO316FmyqmZi/giphy.gif"  />
+img src="https://media1.giphy.com/media/AFdcYElkoNAUE/giphy.gif?cid=6c09b9523dovl7d8qic7j6atezuotmd2iyaw3ykokns2vfdd&ep=v1_internal_gif_by_id&rid=giphy.gif&ct=g">
 
 ###
 
 <br clear="both">
 
-<img src="https://media1.giphy.com/media/AFdcYElkoNAUE/giphy.gif?cid=6c09b9523dovl7d8qic7j6atezuotmd2iyaw3ykokns2vfdd&ep=v1_internal_gif_by_id&rid=giphy.gif&ct=g">
 ###
