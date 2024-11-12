@@ -43,11 +43,8 @@
 </div>
 
 ###
-
-img src="https://media1.giphy.com/media/AFdcYElkoNAUE/giphy.gif?cid=6c09b9523dovl7d8qic7j6atezuotmd2iyaw3ykokns2vfdd&ep=v1_internal_gif_by_id&rid=giphy.gif&ct=g">
-
-###
+<div align="center">
+  <img src="https://media1.giphy.com/media/AFdcYElkoNAUE/giphy.gif?cid=6c09b9523dovl7d8qic7j6atezuotmd2iyaw3ykokns2vfdd&ep=v1_internal_gif_by_id&rid=giphy.gif&ct=g">
+</div>
 
 <br clear="both">
-
-###
