@@ -46,7 +46,7 @@ const techs = [
 
 const TechStack: React.FC = () => {
   return (
-    <section id="techstack" className="py-5 bg-dark text-light">
+    <section id="techstack" className="py-5 text-light">
       <Container>
         <h2 className="text-primary text-center mb-5" data-aos="fade-up">
           Tech Stack
@@ -68,7 +68,7 @@ const TechStack: React.FC = () => {
                 className="img-fluid mb-2"
                 style={{ height: "60px" }}
               />
-              <p className="text-muted small">{tech.name}</p>
+              <p className="text-light small">{tech.name}</p>
             </Col>
           ))}
         </Row>

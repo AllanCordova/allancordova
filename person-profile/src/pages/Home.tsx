@@ -8,13 +8,16 @@ import Footer from "../components/Footer";
 const Home = () => {
   return (
     <>
-      <Header />
-      <div style={{ paddingTop: "70px" }}>
-        <Intro />
-        <About />
-        <TechStack />
-        <Projects />
-        <Footer />
+      <div className="about">
+        <Header />
+        <div style={{ paddingTop: "70px" }}>
+          <Intro />
+
+          <About />
+          <TechStack />
+          <Projects />
+          <Footer />
+        </div>
       </div>
     </>
   );

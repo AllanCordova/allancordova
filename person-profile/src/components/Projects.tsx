@@ -4,23 +4,30 @@ import { Container, Row, Col, Card, Button } from "react-bootstrap";
 const projects = [
   {
     title: "Projeto 1",
-    image: "https://via.placeholder.com/600x400.png?text=Projeto+1",
+    image:
+      "https://res.cloudinary.com/dholbtxkp/image/upload/v1747166262/money_fqqweg.png",
     description:
-      "Descrição rápida do projeto 1. Pode ser uma aplicação em React.",
-    link: "https://github.com/seu-usuario/projeto1",
+      "Money Flow é um sistema feito em react, para gerenciamento financeiro",
+    link: "https://github.com/AllanCordova/money-flow",
+    demo: "https://allancordova.github.io/money-flow/",
   },
   {
     title: "Projeto 2",
-    image: "https://via.placeholder.com/600x400.png?text=Projeto+2",
+    image:
+      "https://res.cloudinary.com/dholbtxkp/image/upload/v1747167194/type_ngqrku.png",
     description:
-      "Descrição rápida do projeto 2. Pode ser um sistema com Angular.",
-    link: "https://github.com/seu-usuario/projeto2",
+      "repositorio com diversas resoluções, da linguagem type-script tudo orientado a objetos",
+    link: "https://github.com/AllanCordova/typescript",
+    demo: "https://github.com/AllanCordova/typescript",
   },
   {
     title: "Projeto 3",
-    image: "https://via.placeholder.com/600x400.png?text=Projeto+3",
-    description: "Outro projeto interessante com backend e banco de dados.",
-    link: "https://github.com/seu-usuario/projeto3",
+    image:
+      "https://res.cloudinary.com/dholbtxkp/image/upload/v1747166404/myrdal_onmox9.png",
+    description:
+      "Projeto robusto desenvolvido para aprendizado de conceitos básicos e avançados de poo",
+    link: "https://github.com/AllanCordova/myrdal-rpg",
+    demo: "https://github.com/AllanCordova/myrdal-rpg",
   },
 ];
 
@@ -38,11 +45,18 @@ const Projects: React.FC = () => {
               data-aos-duration="800"
             >
               <Card className="h-100 bg-dark text-light border-0 shadow-sm">
-                <Card.Img
-                  variant="top"
-                  src={project.image}
-                  alt={project.title}
-                />
+                <a
+                  href={project.demo}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <Card.Img
+                    variant="top"
+                    src={project.image}
+                    alt={project.title}
+                    style={{ cursor: "pointer" }}
+                  />
+                </a>
                 <Card.Body>
                   <Card.Title>{project.title}</Card.Title>
                   <Card.Text>{project.description}</Card.Text>
@@ -54,7 +68,7 @@ const Projects: React.FC = () => {
                     target="_blank"
                     className="w-100"
                   >
-                    View Project
+                    View on GitHub
                   </Button>
                 </Card.Footer>
               </Card>

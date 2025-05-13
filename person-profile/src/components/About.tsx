@@ -3,7 +3,7 @@ import { Container, Row, Col } from "react-bootstrap";
 
 const About: React.FC = () => {
   return (
-    <section id="about" className="py-5 bg-dark text-light">
+    <section id="about" className="py-5  text-light">
       <Container>
         <Row className="align-items-center">
           <Col md={6} data-aos="fade-right" data-aos-duration="1000">
