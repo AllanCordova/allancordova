@@ -1,0 +1,113 @@
+:root {
+  --color-bg: #121212;
+  --color-primary: #14b8a6;
+  --color-secondary: #6c757d;
+  --color-accent: #b9154c;
+  --color-text: #f8f9fa;
+  --color-link: #6366f1;
+  --color-muted: #adb5bd;
+  --font-family: "Inter", sans-serif;
+  --transition-base: all 0.3s ease-in-out;
+}
+
+body {
+  background-color: var(--color-bg);
+  color: var(--color-text);
+  font-family: var(--font-family);
+  margin: 0;
+  padding: 0;
+}
+
+.navbar {
+  background-color: rgba(18, 18, 18, 0.8) !important;
+  backdrop-filter: blur(10px);
+  transition: var(--transition-base);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.logo {
+  font-size: 1.5rem;
+  color: var(--color-primary) !important;
+  letter-spacing: 1px;
+  transition: var(--transition-base);
+}
+
+.navbar .nav-link {
+  position: relative;
+  margin-left: 1rem;
+  font-weight: 500;
+  color: var(--color-text) !important;
+  transition: var(--transition-base);
+}
+
+.navbar .nav-link::after {
+  content: "";
+  position: absolute;
+  width: 0%;
+  height: 2px;
+  left: 0;
+  bottom: 0;
+  background-color: var(--color-primary);
+  transition: width 0.3s ease-in-out;
+}
+
+.navbar .nav-link:hover::after {
+  width: 100%;
+}
+
+.navbar .nav-link:hover {
+  color: var(--color-primary) !important;
+}
+
+.footer-section {
+  background-color: #0e0e0e;
+  color: var(--color-muted);
+  padding: 3rem 1rem;
+  margin-top: 5rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.footer-logo {
+  color: var(--color-primary);
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+.footer-links a {
+  color: var(--color-text);
+  margin: 0 10px;
+  font-weight: 500;
+  text-decoration: none;
+  transition: var(--transition-base);
+}
+
+.footer-links a:hover {
+  color: var(--color-primary);
+}
+
+.footer-social a {
+  color: var(--color-muted);
+  margin: 0 10px;
+  font-size: 1.5rem;
+  transition: transform 0.3s ease;
+}
+
+.footer-social a:hover {
+  color: var(--color-primary);
+  transform: scale(1.1);
+}
+
+.footer-copy {
+  font-size: 0.9rem;
+  margin-top: 1rem;
+  color: var(--color-muted);
+}
+
+img:hover {
+  transform: scale(1.1);
+  transition: var(--transition-base);
+}
+
+.text-primary {
+  color: var(--color-accent) !important;
+}
