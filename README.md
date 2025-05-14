@@ -5,7 +5,6 @@
   My long-term goal is to become a developer in the cybersecurity field. 🚀
 </p>
 
-
 ###
 
 <div align="center">
@@ -41,22 +40,29 @@
 
 ###
 
-###
-
-###
-
-<h2 align="left">Social Media</h2>
-
-###
+<h2 align="left">Find me here</h2>
 
 <div align="start">
   <a href="https://www.linkedin.com/in/allan-cordova-b2b53135a/" target="_blank">
     <img src="https://img.shields.io/static/v1?message=LinkedIn&logo=linkedin&label=&color=0077B5&logoColor=white&labelColor=&style=for-the-badge" height="35" alt="linkedin logo"  />
   </a>
+  <a href="https://www.instagram.com/_allancordovacamp/" target="_blank">
+    <img src="https://img.shields.io/static/v1?message=Instagram&logo=instagram&label=&color=E4405F&logoColor=white&labelColor=&style=for-the-badge" height="35" alt="instagram logo"  />
+  </a>
+  <a href="https://discord.com/users/allan_crv" target="_blank">
+    <img src="https://img.shields.io/static/v1?message=Discord&logo=discord&label=&color=5865F2&logoColor=white&labelColor=&style=for-the-badge" height="35" alt="discord logo"  />
+  </a>
 </div>
 
 ###
 
+<h2 align="left">Portfolio</h2>
+
+<div align="start">
+  <a href="https://allancordova.github.io/allancordova/" target="_blank">
+    <img src="https://img.shields.io/static/v1?message=My+Website&logo=google-chrome&label=&color=0F9D58&logoColor=white&labelColor=&style=for-the-badge" height="35" alt="website logo"  />
+  </a>
+</div>
 
 ###
 
