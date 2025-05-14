@@ -25,7 +25,7 @@ const projects = [
     image:
       "https://res.cloudinary.com/dholbtxkp/image/upload/v1747166404/myrdal_onmox9.png",
     description:
-      "Projeto robusto desenvolvido para aprendizado de conceitos básicos e avançados de poo",
+      "Projeto robusto desenvolvido para aprendizado de conceitos básicos e avançados de POO",
     link: "https://github.com/AllanCordova/myrdal-rpg",
     demo: "https://github.com/AllanCordova/myrdal-rpg",
   },
@@ -35,8 +35,10 @@ const Projects: React.FC = () => {
   return (
     <section id="projects" className="py-5">
       <Container>
-        <h2 className="text-primary mb-4 text-center">Projects</h2>
-        <Row xs={1} md={2} lg={3} className="g-4">
+        <h2 className="text-primary mb-5 text-center poppins-medium fs-1">
+          Projects
+        </h2>
+        <Row xs={1} md={2} lg={3} className="g-4 poppins-medium">
           {projects.map((project, idx) => (
             <Col
               key={idx}
@@ -55,6 +57,7 @@ const Projects: React.FC = () => {
                     src={project.image}
                     alt={project.title}
                     style={{ cursor: "pointer" }}
+                    className="card-img"
                   />
                 </a>
                 <Card.Body>

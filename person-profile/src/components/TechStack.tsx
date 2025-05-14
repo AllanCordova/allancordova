@@ -48,8 +48,11 @@ const TechStack: React.FC = () => {
   return (
     <section id="techstack" className="py-5 text-light">
       <Container>
-        <h2 className="text-primary text-center mb-5" data-aos="fade-up">
-          Tech Stack
+        <h2
+          className="text-primary text-center fs-1 mb-5 poppins-medium"
+          data-aos="fade-up"
+        >
+          I code With
         </h2>
         <Row className="g-4 justify-content-center">
           {techs.map((tech, idx) => (
@@ -65,10 +68,10 @@ const TechStack: React.FC = () => {
               <img
                 src={tech.icon}
                 alt={tech.name}
-                className="img-fluid mb-2"
+                className="img-fluid icon mb-2"
                 style={{ height: "60px" }}
               />
-              <p className="text-light small">{tech.name}</p>
+              <p className="text-light small poppins-regular">{tech.name}</p>
             </Col>
           ))}
         </Row>

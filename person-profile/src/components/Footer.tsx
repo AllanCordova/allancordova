@@ -5,7 +5,7 @@ import "../styles/style.css";
 
 const Footer: React.FC = () => {
   return (
-    <footer className="footer-section">
+    <footer className="footer-section poppins-medium">
       <Container className="text-center py-4">
         <h5 className="footer-logo mb-3">Allan Cordova</h5>
 
@@ -17,7 +17,7 @@ const Footer: React.FC = () => {
 
         <div className="footer-social mb-3">
           <a
-            href="https://www.linkedin.com/in/allan-roberto-cordova-de-campos-7542b2331/"
+            href="https://www.linkedin.com/in/allan-cordova-b2b53135a//"
             target="_blank"
             rel="noreferrer"
           >
@@ -31,7 +31,7 @@ const Footer: React.FC = () => {
             <FaGithub />
           </a>
           <a
-            href="https://www.instagram.com/allan_campos2010/"
+            href="https://www.instagram.com/_allancordovacamp//"
             target="_blank"
             rel="noreferrer"
           >

@@ -1,6 +1,6 @@
 import { useEffect, useRef, useState } from "react";
 
-export function useScrollFadeIn(duration = 0.8, delay = 0) {
+export function useScrollFadeIn(duration = 1.4, delay = 0.5) {
   const dom = useRef<HTMLDivElement | null>(null);
   const [visible, setVisible] = useState(false);
 

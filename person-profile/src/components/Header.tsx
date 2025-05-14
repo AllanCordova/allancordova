@@ -4,7 +4,7 @@ import AOS from "aos";
 
 const Header: React.FC = () => {
   useEffect(() => {
-    AOS.init({ duration: 800 });
+    AOS.init({ duration: 1000 });
   }, []);
 
   return (
@@ -16,13 +16,16 @@ const Header: React.FC = () => {
       fixed="top"
       data-aos="fade-down"
     >
-      <Container>
-        <Navbar.Brand href="#home" className="fw-bold logo">
-          Allan Cordova
+      <Container data-aos="fade-left" data-aos-duration="1000">
+        <Navbar.Brand
+          href="#home"
+          className="fw-bold logo d-flex align-items-center gap-2"
+        >
+          <span className="poppins-medium">Allan Cordova</span>
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse id="responsive-navbar-nav">
-          <Nav className="ms-auto">
+          <Nav className="ms-auto poppins-medium">
             <Nav.Link className="link" href="#about">
               About
             </Nav.Link>
