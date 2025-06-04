@@ -2,7 +2,13 @@ import { useEffect, useRef } from "react";
 
 export default function FallingParticles() {
   const canvasRef = useRef<HTMLCanvasElement | null>(null);
-  const particles: { x: number; y: number; speed: number; size: number }[] = [];
+  const particles: {
+    x: number;
+    y: number;
+    speed: number;
+    size: number;
+    dx: number;
+  }[] = [];
 
   useEffect(() => {
     const canvas = canvasRef.current;
@@ -19,33 +25,32 @@ export default function FallingParticles() {
 
     window.addEventListener("resize", resize);
 
-    for (let i = 0; i < 13; i++) {
+    const particleCount = 100;
+    for (let i = 0; i < particleCount; i++) {
       particles.push({
         x: Math.random() * canvas.width,
         y: Math.random() * canvas.height,
-        speed: 0.2 + Math.random() * 0.6,
-        size: 12 + Math.random() * 2,
+        speed: 0.1 + Math.random() * 0.3,
+        size: 0.5 + Math.random() * 1.2,
+        dx: 0.5,
       });
     }
 
     const animate = () => {
       if (!ctx) return;
 
-      ctx.fillStyle = "rgba(0, 0, 0, 0.2)";
-      ctx.fillRect(0, 0, canvas.width, canvas.height);
-
-      ctx.fillStyle = "#ffffff";
-      ctx.font = "bold 16px Arial";
-      ctx.textAlign = "center";
+      ctx.clearRect(0, 0, canvas.width, canvas.height);
+      ctx.fillStyle = "#b9154c";
 
       for (const p of particles) {
-        ctx.font = `bold ${p.size}px Arial`;
-        ctx.fillText("★", p.x, p.y);
+        ctx.beginPath();
+        ctx.arc(p.x, p.y, p.size, 0, Math.PI * 2);
+        ctx.fill();
 
         p.y += p.speed;
-        p.x -= p.speed * 0.8;
+        p.x += p.dx;
 
-        if (p.y > canvas.height || p.x < 0) {
+        if (p.y > canvas.height || p.x < 0 || p.x > canvas.width) {
           p.y = 0;
           p.x = Math.random() * canvas.width;
         }

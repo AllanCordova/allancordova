@@ -49,7 +49,7 @@ const TechStack: React.FC = () => {
     <section id="techstack" className="py-5 text-light">
       <Container>
         <h2
-          className="text-primary text-center fs-1 mb-5 poppins-medium"
+          className="text-primary text-center mb-5 poppins-medium"
           data-aos="fade-up"
         >
           I code With
@@ -63,7 +63,7 @@ const TechStack: React.FC = () => {
               key={tech.name}
               className="text-center"
               data-aos="fade-up"
-              data-aos-delay={idx * 100}
+              data-aos-delay={idx * 90}
             >
               <img
                 src={tech.icon}
@@ -71,7 +71,7 @@ const TechStack: React.FC = () => {
                 className="img-fluid icon mb-2"
                 style={{ height: "60px" }}
               />
-              <p className="text-light small poppins-regular">{tech.name}</p>
+              <p className="text-light small poppins-light">{tech.name}</p>
             </Col>
           ))}
         </Row>

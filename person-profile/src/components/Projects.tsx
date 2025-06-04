@@ -5,29 +5,47 @@ const projects = [
   {
     title: "Projeto 1",
     image:
-      "https://res.cloudinary.com/dholbtxkp/image/upload/v1747166262/money_fqqweg.png",
+      "https://res.cloudinary.com/dholbtxkp/image/upload/v1749062364/mind-rush_hu4i1y.png",
     description:
-      "Money Flow é um sistema feito em react, para gerenciamento financeiro",
-    link: "https://github.com/AllanCordova/money-flow",
-    demo: "https://allancordova.github.io/money-flow/",
+      "Sistema de quizes, com visual retro, criado para aprender novos conceitos do Angular 19",
+    link: "https://github.com/AllanCordova/mind-rush.git",
+    demo: "https://allancordova.github.io/mind-rush/home",
   },
   {
     title: "Projeto 2",
     image:
-      "https://res.cloudinary.com/dholbtxkp/image/upload/v1747167194/type_ngqrku.png",
+      "https://res.cloudinary.com/dholbtxkp/image/upload/v1749062909/Myrdal-rpg_sybmdg.png",
+    description:
+      "Projeto robusto desenvolvido para aprendizado de conceitos básicos e avançados de POO",
+    link: "https://github.com/AllanCordova/myrdal-rpg",
+    demo: "https://github.com/AllanCordova/myrdal-rpg",
+  },
+  {
+    title: "Projeto 3",
+    image:
+      "https://res.cloudinary.com/dholbtxkp/image/upload/v1749063139/money-flow_rhcykb.png",
+    description:
+      "Money Flow é um sistema de gerenciamento Finenceiro, feito para aprender Context API, Reducer, Routes em React",
+    link: "https://github.com/AllanCordova/money-flow",
+    demo: "https://allancordova.github.io/money-flow/",
+  },
+  {
+    title: "Projeto 4",
+    image:
+      "https://res.cloudinary.com/dholbtxkp/image/upload/v1749063344/ts_k1lvav.png",
     description:
       "repositorio com diversas resoluções, da linguagem type-script tudo orientado a objetos",
     link: "https://github.com/AllanCordova/typescript",
     demo: "https://github.com/AllanCordova/typescript",
   },
   {
-    title: "Projeto 3",
+    title: "Projeto 5",
     image:
-      "https://res.cloudinary.com/dholbtxkp/image/upload/v1747166404/myrdal_onmox9.png",
+      "https://res.cloudinary.com/dholbtxkp/image/upload/v1749062545/active-tracker_b21wxj.png",
     description:
-      "Projeto robusto desenvolvido para aprendizado de conceitos básicos e avançados de POO",
-    link: "https://github.com/AllanCordova/myrdal-rpg",
-    demo: "https://github.com/AllanCordova/myrdal-rpg",
+      "Sistema de Registro e Criação de treinos, dsenvolvido usando base da web / HTML5/ CSS3/ JS",
+    link: "https://github.com/AllanCordova/typescript",
+    demo: "https://github.com/AllanCordova/typescript",
   },
 ];
 
@@ -35,10 +53,10 @@ const Projects: React.FC = () => {
   return (
     <section id="projects" className="py-5">
       <Container>
-        <h2 className="text-primary mb-5 text-center poppins-medium fs-1">
+        <h2 className="text-primary mb-5 text-center poppins-medium h1">
           Projects
         </h2>
-        <Row xs={1} md={2} lg={3} className="g-4 poppins-medium">
+        <Row xs={1} md={2} lg={3} className="g-4 poppins-light">
           {projects.map((project, idx) => (
             <Col
               key={idx}
@@ -61,8 +79,12 @@ const Projects: React.FC = () => {
                   />
                 </a>
                 <Card.Body>
-                  <Card.Title>{project.title}</Card.Title>
-                  <Card.Text>{project.description}</Card.Text>
+                  <Card.Title className="poppins-light">
+                    {project.title}
+                  </Card.Title>
+                  <Card.Text className="poppins-light">
+                    {project.description}
+                  </Card.Text>
                 </Card.Body>
                 <Card.Footer className="bg-transparent border-0">
                   <Button

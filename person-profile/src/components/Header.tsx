@@ -25,7 +25,7 @@ const Header: React.FC = () => {
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse id="responsive-navbar-nav">
-          <Nav className="ms-auto poppins-medium">
+          <Nav className="ms-auto">
             <Nav.Link className="link" href="#about">
               About
             </Nav.Link>
