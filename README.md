@@ -1,8 +1,6 @@
-<h2 align="left">Hi 👋! I'm Allan — a passionate Full-Stack Developer and Computer Science student at UTFPR</h2>
+<h2 align="left">Olá, eu sou Allan! desenvolvedor Web</h2>
 <p align="left">
-  Skilled in React, Angular, TypeScript, JavaScript, HTML5, CSS3, and MySQL.  
-  Currently learning data modeling, advanced OOP, and Docker.  
-  My long-term goal is to become a developer in the cybersecurity field. 🚀
+  Trabalho atualmente, com tecnologias como: TypeScript, Angular, Mysql, Docker e PHP. desenvolvendo soluções eficaz e sustentavéis, fique a vontade em conhecer alguns dos meu projetos navegando pelo meu pérfil!
 </p>
 
 ###
@@ -14,7 +12,7 @@
 
 ###
 
-<h2 align="left">I code With</h2>
+<h2 align="left">Eu trabalho com</h2>
 
 ###
 
@@ -36,11 +34,13 @@
   <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg" height="40" alt="docker logo"  />
   <img width="12" />
   <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jest/jest-plain.svg" height="40" alt="jest logo"  />
+  <img width="12" />
+  <img height="40" src="https://devicon-website.vercel.app/api/php/original.svg"></img>
 </div>
 
 ###
 
-<h2 align="left">Find me here</h2>
+<h2 align="left">Fique a vontade para me seguir nas redes!</h2>
 
 <div align="start">
   <a href="https://www.linkedin.com/in/allan-cordova-b2b53135a/" target="_blank">
@@ -51,16 +51,6 @@
   </a>
   <a href="https://discord.com/users/allan_crv" target="_blank">
     <img src="https://img.shields.io/static/v1?message=Discord&logo=discord&label=&color=5865F2&logoColor=white&labelColor=&style=for-the-badge" height="35" alt="discord logo"  />
-  </a>
-</div>
-
-###
-
-<h2 align="left">Portfolio</h2>
-
-<div align="start">
-  <a href="https://allancordova.github.io/allancordova/" target="_blank">
-    <img src="https://img.shields.io/static/v1?message=My+Website&logo=google-chrome&label=&color=0F9D58&logoColor=white&labelColor=&style=for-the-badge" height="35" alt="website logo"  />
   </a>
 </div>
 
