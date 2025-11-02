@@ -1,0 +1,25 @@
+<header class="header">
+  <nav class="navbar navbar-expand-lg">
+    <div class="container">
+      <a class="navbar-brand poppins-semibold" href="#">
+        <span class="brand-text">Allan Cordova</span>
+      </a>
+      <div class="navbar-desktop">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link poppins-medium" href="#projects" [class.active]="activeSection() === 'projects'">Projetos</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link poppins-medium" href="#about" [class.active]="activeSection() === 'about'">Sobre</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link poppins-medium" href="#stack" [class.active]="activeSection() === 'stack'">Stack</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link poppins-medium" href="#contact" [class.active]="activeSection() === 'contact'">Contato</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+</header>

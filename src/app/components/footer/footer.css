@@ -1,0 +1,57 @@
+.footer {
+  background-color: var(--color-surface);
+  border-top: 1px solid var(--color-border);
+  padding: var(--spacing-section-sm) 0;
+  margin-top: auto;
+  overflow-x: hidden;
+  width: 100%;
+  max-width: 100%;
+}
+
+.footer-social-link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: var(--color-surface-hover);
+  color: var(--color-text-secondary) !important;
+  text-decoration: none;
+  font-size: var(--font-size-lg);
+  transition: all 0.3s ease;
+  line-height: 1;
+  position: relative;
+}
+
+.footer-social-link:hover {
+  background-color: var(--color-primary);
+  color: var(--color-text-primary) !important;
+  transform: translateY(-3px);
+}
+
+.footer-social-link i {
+  display: inline-block;
+  font-size: 1.25rem;
+  color: var(--color-text-secondary);
+  line-height: 1;
+  position: relative;
+  z-index: 1;
+}
+
+.footer-social-link:hover i {
+  color: var(--color-text-primary) !important;
+}
+
+/* Garantir que os ícones do Bootstrap Icons apareçam */
+.footer-social-link i.bi {
+  font-family: "bootstrap-icons" !important;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  vertical-align: middle;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}

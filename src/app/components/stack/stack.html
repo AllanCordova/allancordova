@@ -1,0 +1,32 @@
+<section id="stack" class="stack section">
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <h2 class="stack-title poppins-semibold text-center mb-5">
+          Minha <span class="text-primary">Stack</span>
+        </h2>
+        <p class="stack-subtitle poppins-regular text-center mb-5">
+          Tecnologias e ferramentas que utilizo no desenvolvimento
+        </p>
+      </div>
+    </div>
+
+    <div class="stack-grid">
+      @for (tech of technologies(); track tech.name; let i = $index) {
+        <div class="stack-item">
+          <div class="stack-icon-wrapper">
+            <img 
+              [src]="tech.iconUrl" 
+              [alt]="tech.name + ' logo'" 
+              class="stack-icon"
+              loading="lazy"
+            />
+            <div class="stack-overlay">
+              <span class="stack-name poppins-medium">{{ tech.name }}</span>
+            </div>
+          </div>
+        </div>
+      }
+    </div>
+  </div>
+</section>

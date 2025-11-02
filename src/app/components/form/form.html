@@ -1,0 +1,150 @@
+<section id="contact" class="contact-form section">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 mx-auto">
+        <div class="form-wrapper">
+          <h2 class="form-title poppins-semibold text-center mb-4">
+            Entre em <span class="text-primary">Contato</span>
+          </h2>
+          <p class="form-subtitle poppins-regular text-center mb-5">
+            Envie uma mensagem e eu responderei o mais breve possível!
+          </p>
+
+          @if (submitted()) {
+            <div class="alert alert-success alert-dismissible fade show" role="alert">
+              <i class="bi bi-check-circle me-2"></i>
+              <strong>Mensagem enviada com sucesso!</strong> Retornarei em breve.
+            </div>
+          }
+
+          @if (error()) {
+            <div class="alert alert-danger alert-dismissible fade show" role="alert">
+              <i class="bi bi-exclamation-triangle me-2"></i>
+              <strong>Erro:</strong> {{ error() }}
+              <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close" (click)="error.set(null)"></button>
+            </div>
+          }
+
+          <form [formGroup]="contactForm" (ngSubmit)="onSubmit()" novalidate>
+            <div class="row g-3">
+              <!-- Nome -->
+              <div class="col-md-6">
+                <div class="form-group">
+                  <label for="name" class="form-label poppins-medium">
+                    Nome <span class="text-primary">*</span>
+                  </label>
+                  <input
+                    type="text"
+                    id="name"
+                    formControlName="name"
+                    class="form-control"
+                    [class.is-invalid]="isFieldInvalid('name')"
+                    [class.is-valid]="isFieldValid('name')"
+                    placeholder="Seu nome completo"
+                    autocomplete="name"
+                  />
+                  @if (isFieldInvalid('name')) {
+                    <div class="invalid-feedback d-block">
+                      <i class="bi bi-exclamation-circle me-1"></i>
+                      {{ getFieldError('name') }}
+                    </div>
+                  }
+                </div>
+              </div>
+
+              <!-- Email -->
+              <div class="col-md-6">
+                <div class="form-group">
+                  <label for="email" class="form-label poppins-medium">
+                    Email <span class="text-primary">*</span>
+                  </label>
+                  <input
+                    type="email"
+                    id="email"
+                    formControlName="email"
+                    class="form-control"
+                    [class.is-invalid]="isFieldInvalid('email')"
+                    [class.is-valid]="isFieldValid('email')"
+                    placeholder="seu@email.com"
+                    autocomplete="email"
+                  />
+                  @if (isFieldInvalid('email')) {
+                    <div class="invalid-feedback d-block">
+                      <i class="bi bi-exclamation-circle me-1"></i>
+                      {{ getFieldError('email') }}
+                    </div>
+                  }
+                </div>
+              </div>
+
+              <!-- Assunto -->
+              <div class="col-12">
+                <div class="form-group">
+                  <label for="subject" class="form-label poppins-medium">
+                    Assunto <span class="text-primary">*</span>
+                  </label>
+                  <input
+                    type="text"
+                    id="subject"
+                    formControlName="subject"
+                    class="form-control"
+                    [class.is-invalid]="isFieldInvalid('subject')"
+                    [class.is-valid]="isFieldValid('subject')"
+                    placeholder="Assunto da mensagem"
+                  />
+                  @if (isFieldInvalid('subject')) {
+                    <div class="invalid-feedback d-block">
+                      <i class="bi bi-exclamation-circle me-1"></i>
+                      {{ getFieldError('subject') }}
+                    </div>
+                  }
+                </div>
+              </div>
+
+              <!-- Mensagem -->
+              <div class="col-12">
+                <div class="form-group">
+                  <label for="message" class="form-label poppins-medium">
+                    Mensagem <span class="text-primary">*</span>
+                  </label>
+                  <textarea
+                    id="message"
+                    formControlName="message"
+                    class="form-control"
+                    [class.is-invalid]="isFieldInvalid('message')"
+                    [class.is-valid]="isFieldValid('message')"
+                    rows="5"
+                    placeholder="Digite sua mensagem aqui..."
+                  ></textarea>
+                  @if (isFieldInvalid('message')) {
+                    <div class="invalid-feedback d-block">
+                      <i class="bi bi-exclamation-circle me-1"></i>
+                      {{ getFieldError('message') }}
+                    </div>
+                  }
+                </div>
+              </div>
+
+              <!-- Botão Submit -->
+              <div class="col-12">
+                <button
+                  type="submit"
+                  class="btn btn-submit poppins-medium w-100"
+                  [disabled]="contactForm.invalid || submitting()"
+                >
+                  @if (submitting()) {
+                    <span class="spinner-border spinner-border-sm me-2" role="status" aria-hidden="true"></span>
+                    Enviando...
+                  } @else {
+                    <i class="bi bi-send me-2"></i>
+                    Enviar Mensagem
+                  }
+                </button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

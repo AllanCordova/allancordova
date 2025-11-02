@@ -1,1 +1,169 @@
 /* You can add global styles to this file, and also import other style files */
+
+/* ============================================
+   CSS VARIABLES - TEMA DARK COM ROSA PRIMÁRIO
+   ============================================ */
+:root {
+  /* Cores principais */
+  --color-primary: #D63384;
+  --color-primary-dark: #B02067;
+  --color-primary-light: #E5599E;
+
+  /* Cores do tema dark */
+  --color-background: #0A0A0A;
+  --color-surface: #141414;
+  --color-surface-hover: #1A1A1A;
+  --color-border: #2A2A2A;
+
+  /* Cores de texto */
+  --color-text-primary: #FFFFFF;
+  --color-text-secondary: #B8B8B8;
+  --color-text-muted: #6B6B6B;
+
+  /* Espaçamentos de seções */
+  --spacing-section-xs: clamp(2rem, 4vw, 3rem);
+  --spacing-section-sm: clamp(3rem, 6vw, 5rem);
+  --spacing-section-md: clamp(4rem, 8vw, 7rem);
+  --spacing-section-lg: clamp(5rem, 10vw, 9rem);
+  --spacing-section-xl: clamp(6rem, 12vw, 11rem);
+
+  /* Font sizes com clamp */
+  --font-size-xs: clamp(0.75rem, 0.5vw + 0.65rem, 0.875rem);
+  --font-size-sm: clamp(0.875rem, 0.75vw + 0.675rem, 1rem);
+  --font-size-base: clamp(1rem, 1vw + 0.75rem, 1.125rem);
+  --font-size-lg: clamp(1.125rem, 1.25vw + 0.8rem, 1.25rem);
+  --font-size-xl: clamp(1.25rem, 1.5vw + 0.9rem, 1.5rem);
+  --font-size-2xl: clamp(1.5rem, 2vw + 1rem, 2rem);
+  --font-size-3xl: clamp(2rem, 3vw + 1.25rem, 2.5rem);
+  --font-size-4xl: clamp(2.5rem, 4vw + 1.5rem, 3.5rem);
+  --font-size-5xl: clamp(3rem, 5vw + 1.75rem, 4.5rem);
+}
+
+/* ============================================
+   RESET GLOBAL
+   ============================================ */
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+  width: 100%;
+}
+
+body {
+  background-color: var(--color-background);
+  color: var(--color-text-primary);
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-size: var(--font-size-base);
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
+  width: 100%;
+  max-width: 100vw;
+  position: relative;
+}
+
+/* Prevenir overflow horizontal global */
+section {
+  overflow-x: hidden;
+  max-width: 100%;
+}
+
+/* Corrigir problemas do Bootstrap com rows */
+.row {
+  --bs-gutter-x: 1.5rem;
+  margin-left: calc(var(--bs-gutter-x) * -0.5);
+  margin-right: calc(var(--bs-gutter-x) * -0.5);
+}
+
+.container {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+/* ============================================
+   CLASSES DE FONTE POPPINS
+   ============================================ */
+.poppins-regular {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.poppins-medium {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.poppins-semibold {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+}
+
+/* ============================================
+   UTILITÁRIOS GLOBAIS
+   ============================================ */
+.section {
+  padding: var(--spacing-section-md) 0;
+}
+
+.section-sm {
+  padding: var(--spacing-section-sm) 0;
+}
+
+.section-lg {
+  padding: var(--spacing-section-lg) 0;
+}
+
+.section-xl {
+  padding: var(--spacing-section-xl) 0;
+}
+
+/* ============================================
+   CUSTOMIZAÇÃO BOOTSTRAP - TEMA DARK
+   ============================================ */
+:root {
+  --bs-body-bg: var(--color-background);
+  --bs-body-color: var(--color-text-primary);
+  --bs-primary: var(--color-primary);
+  --bs-primary-rgb: 214, 51, 132;
+  --bs-border-color: var(--color-border);
+  --bs-secondary: var(--color-text-secondary);
+}
+
+.container {
+  max-width: 1200px;
+}
+
+.btn-primary {
+  background-color: var(--color-primary);
+  border-color: var(--color-primary);
+  color: var(--color-text-primary);
+}
+
+.btn-primary:hover {
+  background-color: var(--color-primary-dark);
+  border-color: var(--color-primary-dark);
+}
+
+.navbar-dark {
+  --bs-navbar-color: var(--color-text-secondary);
+  --bs-navbar-hover-color: var(--color-primary);
+  --bs-navbar-active-color: var(--color-primary);
+}
+
+.collapse {
+  transition: all 0.3s ease;
+}
+
+.text-primary {
+  color: var(--color-primary) !important;
+}

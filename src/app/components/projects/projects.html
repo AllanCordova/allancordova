@@ -1,0 +1,111 @@
+<section id="projects" class="projects section">
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <h2 class="projects-title poppins-semibold text-center mb-5">
+          Meus <span class="text-primary">Projetos</span>
+        </h2>
+      </div>
+    </div>
+
+    @if (loading()) {
+    <div class="row">
+      <div class="col-12 text-center py-5">
+        <div class="spinner-border text-primary" role="status">
+          <span class="visually-hidden">Carregando...</span>
+        </div>
+      </div>
+    </div>
+    } @else { @if (projects().length === 0) {
+    <div class="row">
+      <div class="col-12 text-center py-5">
+        <p class="poppins-regular text-muted">Nenhum projeto encontrado.</p>
+      </div>
+    </div>
+    } @else {
+    <div class="swiper">
+      <div class="swiper-wrapper">
+        @for (project of projects(); track $index) {
+        <div class="swiper-slide">
+          <div class="project-card">
+            <div class="project-image-wrapper">
+              <div class="project-image">
+                <img
+                  src="{{ project.imageUrl }}"
+                  alt="Imagem de capa do projeto {{ project.name }}"
+                />
+              </div>
+
+              <div class="project-overlay">
+                <div class="project-links">
+                  @if (project.repositoryUrl) {
+                  <a
+                    href="{{ project.repositoryUrl }}"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="project-link"
+                    aria-label="Ver repositório do projeto {{ project.name }}"
+                  >
+                    <i class="bi bi-github"></i>
+                  </a>
+                  } @if (project.deployUrl) {
+                  <a
+                    href="{{ project.deployUrl }}"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="project-link"
+                    aria-label="Ver projeto {{ project.name }} online"
+                  >
+                    <i class="bi bi-box-arrow-up-right"></i>
+                  </a>
+                  }
+                </div>
+              </div>
+            </div>
+            <div class="project-content">
+              <h3 class="project-name poppins-medium">{{ project.name }}</h3>
+
+              <p class="project-description poppins-regular">
+                {{ truncateText(project.description, 100) }}
+              </p>
+
+              @if (project.technologies && project.technologies.length > 0) {
+              <div class="project-technologies">
+                @for (tech of project.technologies; track $index) {
+                <span class="tech-badge">{{ tech }}</span>
+                }
+              </div>
+              }
+
+              <div class="project-footer">
+                @if (project.repositoryUrl) {
+                <a
+                  href="{{ project.repositoryUrl }}"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="project-btn"
+                >
+                  Repositório
+                </a>
+                } @if (project.deployUrl) {
+                <a
+                  href="{{ project.deployUrl }}"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="project-btn project-btn-primary"
+                >
+                  Ver Online
+                </a>
+                }
+              </div>
+            </div>
+          </div>
+        </div>
+        }
+      </div>
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-button-next"></div>
+    </div>
+    } }
+  </div>
+</section>
