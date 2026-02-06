@@ -5,7 +5,7 @@
 </p>
 
 <p align="left">
-  Venhor desenvolvendo softwares bem modelados, escaláveis e fáceis de manter. Atualmente,  tabalhando principalmente con o ecossistema <strong>React/Next.js</strong> com <strong>TypeScript</strong>, aplicando princípios da computação e engenharia de software para resolver problemas complexos.
+  Venho desenvolvendo softwares bem modelados, escaláveis e fáceis de manter. Atualmente,  tabalhando principalmente con o ecossistema <strong>React/Next.js</strong> com <strong>TypeScript</strong>, aplicando princípios da computação e engenharia de software para resolver problemas complexos.
 </p>
 
 <p align="left">
