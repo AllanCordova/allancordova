@@ -1,23 +1,26 @@
-<h1 align="left">Olá, eu sou o Allan Cordova 👋</h1>
+<h1 align="left">Olá, eu sou o Allan Cordova</h1>
 
 <p align="left">
   <em>Desenvolvedor Web Fullstack</em>
 </p>
 
 <p align="left">
-  Venho desenvolvendo softwares bem modelados, escaláveis e fáceis de manter. Atualmente,  tabalhando principalmente con o ecossistema <strong>React/Next.js</strong> com <strong>TypeScript</strong>, aplicando princípios da computação e engenharia de software para resolver problemas complexos.
+  Venho desenvolvendo softwares bem modelados, escaláveis e fáceis de manter. Atualmente,  trabalhando principalmente com o ecossistema <strong>React/Next.js</strong> com <strong>TypeScript</strong>, aplicando princípios da computação e engenharia de software para resolver problemas complexos.
 </p>
 
 <p align="left">
-  🚀 <strong>Objetivo atual:</strong> Resolver problemas e entregar valor em softwares
+  <strong>Objetivo atual:</strong> Resolver problemas e entregar valor em softwares
 </p>
+
 
 ---
 
-<h2 align="left">🛠️ Tecnologias & Ferramentas</h2>
+<h2 align="left">Tecnologias & Ferramentas</h2>
 
 <div align="left">
   <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg" height="40" alt="typescript logo" title="TypeScript" />
+  <img width="12" />
+  <img src="https://github.com/devicons/devicon/blob/v2.17.0/icons/java/java-original.svg" height="40" alt="java logo" title="Java" />
   <img width="12" />
   <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" height="40" alt="javascript logo" title="JavaScript" />
   <img width="12" />
@@ -41,30 +44,22 @@
 
 ---
 
-<h2 align="left">🔥 Projeto em Destaque</h2>
+<h2 align="left">Educação</h2>
 
-### 📖 Abide
-> *Uma aplicação web moderna desenvolvida para incentivar e facilitar a leitura diária da Bíblia.*
+<p align="left">
+  <strong>Tecnologia em Sistemas para Internet</strong> — Universidade Tecnológica Federal do Paraná (UTFPR) 2024 - 2026<br>
+</p>
 
-O **Abide** é um projeto Fullstack que materializa meus estudos em arquitetura limpa e interfaces responsivas. Ele oferece devocionais estruturados, meditações e tracking de leitura.
+<ul align="left">
+  <li><strong>Fundamentos da Computação e Algoritmos:</strong> Resolução de Problemas, Estrutura de Dados, Pensamento Computacional.</li>
+  <li><strong>Engenharia de Software e Arquitetura:</strong> Projeto de Software, Programação Orientada a Objetos (POO).</li>
+  <li><strong>Desenvolvimento Backend e DevOps:</strong> Desenvolvimento de Aplicações Backend, Fundamentos em Servidores Web, Desenvolvimento e Operações na Web (DevOps).</li>
+  <li><strong>Banco de Dados:</strong> Modelagem e implementação de Bancos de Dados Relacionais (SQL) e NoSQL.</li>
+  <li><strong>Desenvolvimento Frontend e Mobile:</strong> Desenvolvimento Web Avançado com Frameworks (HTML, CSS, Componentização), Programação para Dispositivos Móveis.</li>
+</ul>
 
-**Tech Stack:**
-`Next.js` `TypeScript` `Supabase` `PostgreSQL` `TailwindCSS` `CI/CD`
 
-[**Explorar o repositório »**](https://github.com/AllanCordova/abide)
-
----
-
-<h2 align="left">📊 GitHub Stats</h2>
-
-<div align="left">
-  <img src="https://github-readme-stats.vercel.app/api?username=AllanCordova&hide_title=false&hide_rank=false&show_icons=true&include_all_commits=true&count_private=true&disable_animations=false&theme=dracula&locale=en&hide_border=true" height="150" alt="stats graph" />
-  <img src="https://github-readme-stats.vercel.app/api/top-langs?username=AllanCordova&locale=en&hide_title=false&layout=compact&card_width=320&langs_count=5&theme=dracula&hide_border=true" height="150" alt="languages graph" />
-</div>
-
-<br>
-
-<h2 align="left">📫 Vamos nos conectar!</h2>
+<h2 align="left">Vamos nos conectar!</h2>
 
 <div align="left">
   <a href="https://www.linkedin.com/in/allan-cordova-b2b53135a/" target="_blank">
